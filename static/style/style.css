@@ -19,3 +19,37 @@ header {
     height: 4em;
     color:#6be14e;
 }
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 2em;
+}
+
+.music {
+    width: 60vw;
+    height: 75vh;
+    border: 1px solid black;
+    overflow-y: scroll; 
+}
+
+.playlist {
+    border: 1px solid black;
+    width: 30vw;
+    height: 75vh;
+    overflow-y: scroll;
+}
+
+.music::-webkit-scrollbar, .playlist::-webkit-scrollbar {
+    width: 0.6em;
+}
+
+.music::-webkit-scrollbar-track, .playlist::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.music::-webkit-scrollbar-thumb, .playlist::-webkit-scrollbar-thumb {
+    background-color: #6be14e; 
+    border-radius: 10px;
+    border: 2px solid #8ad471;
+}
