@@ -27,21 +27,43 @@ main {
 }
 
 .music {
-    width: 60vw;
+    width: 50vw;
     height: 75vh;
-    border: 1px solid black;
     overflow-y: scroll; 
+    border-radius: 4px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+    background: black;
+    opacity: 0.5;
+    color:#6be14e;    
 }
 
 .playlist {
-    border: 1px solid black;
-    width: 30vw;
+    width: 40vw;
     height: 75vh;
     overflow-y: scroll;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+    background: black;
+    opacity: 0.5;
+    color:#6be14e;
+}
+
+.music>h1, .playlist>h1 {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    padding: 0.2em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+    border-radius: 4px;
+    background: black;
+    color:#6be14e;
 }
 
 .music::-webkit-scrollbar, .playlist::-webkit-scrollbar {
-    width: 0.6em;
+    width: 0.3em;
 }
 
 .music::-webkit-scrollbar-track, .playlist::-webkit-scrollbar-track {
@@ -50,6 +72,6 @@ main {
 
 .music::-webkit-scrollbar-thumb, .playlist::-webkit-scrollbar-thumb {
     background-color: #6be14e; 
-    border-radius: 10px;
-    border: 2px solid #8ad471;
+    border-radius: 16px;
+    border: 1px solid #6be14e;
 }
