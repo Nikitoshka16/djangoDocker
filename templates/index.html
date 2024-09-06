@@ -16,25 +16,11 @@
         <div class="music">
             <h1>recommendations</h1>
             <div class="recom">
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
-                <h1>recommendations</h1>
+                {% for song in songs%}
+                <div class="song-item">
+                    <h1>{{ song.title }}</h1> {{ song.author }} ({{ song.duration }})
+                </div>
+                {% endfor %}
             </div>
         </div>
         <div class="playlist">
